@@ -15,6 +15,7 @@
 		D328C76E20CFD6CE00F42FCE /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D328C76D20CFD6CE00F42FCE /* BorderButton.swift */; };
 		D328C77620D2403D00F42FCE /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D328C77520D2403D00F42FCE /* LeagueVC.swift */; };
 		D328C77820D2405300F42FCE /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D328C77720D2405300F42FCE /* SkillVC.swift */; };
+		D3803CC320D2461700E0967C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3803CC220D2461700E0967C /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D328C76D20CFD6CE00F42FCE /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		D328C77520D2403D00F42FCE /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
 		D328C77720D2405300F42FCE /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
+		D3803CC220D2461700E0967C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		D328C75920CFD35700F42FCE /* app-swoosh */ = {
 			isa = PBXGroup;
 			children = (
+				D3803CC120D245F700E0967C /* Model */,
 				D328C77420D2402B00F42FCE /* Controller */,
 				D328C76C20CFD6A900F42FCE /* Views */,
 				D328C75A20CFD35700F42FCE /* AppDelegate.swift */,
@@ -87,6 +90,14 @@
 				D328C77720D2405300F42FCE /* SkillVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D3803CC120D245F700E0967C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3803CC220D2461700E0967C /* Player.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 				D328C77620D2403D00F42FCE /* LeagueVC.swift in Sources */,
 				D328C75B20CFD35700F42FCE /* AppDelegate.swift in Sources */,
 				D328C77820D2405300F42FCE /* SkillVC.swift in Sources */,
+				D3803CC320D2461700E0967C /* Player.swift in Sources */,
 				D328C76E20CFD6CE00F42FCE /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
