@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,6 +40,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8Lr-Z8-RKh" kind="show" id="qMX-Vt-Ldq"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53r-k1-aTq">
                                 <rect key="frame" x="52.666666666666657" y="169" width="270" height="74"/>
@@ -88,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="TR5-55-Uik">
             <objects>
-                <viewController id="8Lr-Z8-RKh" sceneMemberID="viewController">
+                <viewController id="8Lr-Z8-RKh" customClass="LeagueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="icV-xC-PAw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,6 +130,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextPressed:" destination="8Lr-Z8-RKh" eventType="touchUpInside" id="BTA-7r-DsF"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FtF-FJ-yKb">
                                 <rect key="frame" x="16" y="215.66666666666663" width="343" height="152"/>
@@ -185,15 +191,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iCM-1z-I1M"/>
                     </view>
+                    <connections>
+                        <segue destination="hcU-Gz-Zta" kind="show" identifier="skillVCSegue" id="Z4f-Ue-xrT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJT-UW-29w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="935" y="133"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="6zL-sH-lES">
             <objects>
-                <viewController id="hcU-Gz-Zta" sceneMemberID="viewController">
+                <viewController id="hcU-Gz-Zta" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I7P-MY-eG5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,7 +217,7 @@
                                         <rect key="frame" x="128" y="0.0" width="119" height="20"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTu-Ft-D6w">
-                                        <rect key="frame" x="112.33333333333333" y="77" width="150.33333333333337" height="24.666666666666671"/>
+                                        <rect key="frame" x="112.66666666666669" y="77" width="150" height="24.666666666666671"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="mGV-GL-dTI"/>
                                         </constraints>
